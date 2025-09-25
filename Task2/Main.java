@@ -15,6 +15,9 @@ public class Main{
 		//2f
 		int age = in.nextInt();
 
+		//2g
+		System.out.printf("You are %d years old \n", age);
+
 	}
 }
 
