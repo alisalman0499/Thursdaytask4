@@ -11,4 +11,14 @@ public class Team{
 	public Team(String name){
 		this.name = name;
 	}
+
+	//1h
+	public void setRank(int rank){
+		this.rank = rank;
+	}
+
+	//1j
+	public String toString(){
+		return "Hold: " + name + " Rang: " + rank;
+	}
 }
