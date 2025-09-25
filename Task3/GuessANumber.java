@@ -26,12 +26,25 @@ public class GuessANumber {
         // use hasNextDouble to check if input is numeric, 
         if (!in.hasNextDouble()){ //if betingelse fra ThinkJava Kapitel 5.10
             String word = in.next();
-            System.err.printf("I didnt know %s was a number :)), try again and maybe type a number this time", word);
+            System.out.printf("I didnt know %s was a number :)), try again and maybe type a number this time \n", word);
+            makeAGuess();
             return;
         }
         // if so...
         int userNumber = (int) in.nextDouble();
 	// Read user input
+        if (userNumber == rnd_number){
+            System.out.println("Congratulations, you got the correct number!");
+            return;
+        } else if (userNumber > rnd_number){
+            System.out.printf("%d was too high, try again \n", userNumber);
+            makeAGuess();
+            return;
+        } else {
+            System.out.printf("%d was too low, try again \n", userNumber);
+            makeAGuess();
+            return;
+        }
         // Compare it with the random number
         // Let the user know the result of the comparison
         // Let the user try again by calling this method recursively
