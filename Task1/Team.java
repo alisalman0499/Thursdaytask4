@@ -4,8 +4,11 @@ public class Team{
 	private String name;
 	//1d
 	private int rank;
+	//1e
+	private String[] players;
 
-	public Team(){
-		
+	//1f
+	public Team(String name){
+		this.name = name;
 	}
 }
