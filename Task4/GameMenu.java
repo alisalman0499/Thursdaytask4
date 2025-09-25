@@ -10,6 +10,7 @@ public class GameMenu{
 		this.actions = actions;
 	}
 
+	//4h
 	public void displayMenu(){
 		for (String action : actions){
 			System.out.println(action);

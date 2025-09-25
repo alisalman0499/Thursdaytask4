@@ -11,7 +11,7 @@ public class Main{
 
 		//4g
 		GameMenu menu = new GameMenu(actions);
-		//4h
+		//4i
 		menu.displayMenu();
 	} 
 }
