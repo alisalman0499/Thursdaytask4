@@ -16,6 +16,14 @@ public class Main{
 		//5d
 		String choice = menu.promptUser();
 
+		// 5g
+		// Konverter string til integer
+		int number = Integer.parseInt(choice);
+
+		// doAction
+		doAction(number);
+
+
 		
 		
 	} 
@@ -36,6 +44,8 @@ public class Main{
 			case 4:
 				System.out.println("Ending game");
 				break;
+			default:
+				System.out.println("Invalid input");
 			
 		}
 	}
