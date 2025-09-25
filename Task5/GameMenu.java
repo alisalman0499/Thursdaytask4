@@ -19,11 +19,13 @@ public class GameMenu{
 	}
 
 	//5a
-	public void promptUser(){
+	public String promptUser(){
 		System.out.println("Type a number to choose an action: ");
 		displayMenu();
 		//5b
 		Scanner in = new Scanner(System.in);
 		String choice = in.nextLine();
+		//5c
+		return choice;
 	}
 }
