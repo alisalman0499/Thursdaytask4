@@ -18,6 +18,10 @@ public class Main{
 		//2g
 		System.out.printf("You are %d years old \n", age);
 
+		//2h
+		int yearsUntilRetirement = 67 - age;
+		System.out.printf("You have %d left until retirement", yearsUntilRetirement);
+
 	}
 }
 
