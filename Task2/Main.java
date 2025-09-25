@@ -12,6 +12,8 @@ public class Main{
 		//2e
 		System.out.printf("Hello %s \n", name);
 		System.out.print("Please type your age: ");
+		//2f
+		int age = in.nextInt();
 
 	}
 }
