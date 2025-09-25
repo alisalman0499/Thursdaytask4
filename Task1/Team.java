@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 //1b
 public class Team{
 	//1c
@@ -5,7 +6,7 @@ public class Team{
 	//1d
 	private int rank;
 	//1e
-	private String[] players;
+	private ArrayList<String> players;
 
 	//1f
 	public Team(String name){
@@ -19,6 +20,17 @@ public class Team{
 
 	//1j
 	public String toString(){
-		return "Hold: " + name + " Rang: " + rank;
+		String teamInfo = "Hold: " + name + " Rang: " + rank + "\n";
+		if (players != null){
+			for (int i = 0; i < players.size(); i++){
+				teamInfo = teamInfo + "Player " + (i + 1) + ": " + players.get(i) + "\n";
+			}
+		}
+		return teamInfo;
+	}
+
+	//1l
+	public void addPlayerName(String playerName){
+		players.add(playerName);
 	}
 }
