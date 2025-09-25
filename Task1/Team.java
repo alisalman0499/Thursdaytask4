@@ -6,7 +6,7 @@ public class Team{
 	//1d
 	private int rank;
 	//1e
-	private ArrayList<String> players;
+	private ArrayList<String> players = new ArrayList<String>();
 
 	//1f
 	public Team(String name){

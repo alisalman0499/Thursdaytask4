@@ -25,6 +25,18 @@ public class Main{
 			System.out.println(team);
 		}
 
+		for (Team team : teams){
+			team.addPlayerName("Hugo");
+			team.addPlayerName("Louis");
+			team.addPlayerName("Juan");
+			team.addPlayerName("Gonzales");
+		}
+
+		for (Team team : teams){
+			System.out.println(team);
+		}
+
+
 
 
 
