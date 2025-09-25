@@ -1,9 +1,18 @@
+//2c
+import java.util.Scanner;
+
 //2a
 public class Main{
 	public static void main(String[] args){
 		//2b
-		System.out.println("Please type your name: ");
-		
+		Scanner in = new Scanner(System.in);
+		System.out.print("Please type your name: ");
+		//2d
+		String name = in.nextLine();
+		//2e
+		System.out.printf("Hello %s \n", name);
+		System.out.print("Please type your age: ");
+
 	}
 }
 
@@ -31,4 +40,4 @@ assign to it the value returned by the nextInt() method of the Scanner object (r
 
 2.h: Declare a third variable of type int. To this variable, assign the calculated number of years 
 until the user can retire. You may assume retirement starts at age 67. 
-Print the result (i.e. like this: "You have <x> years until retirement").
+Print the result (i.e. like this: "You have <x> years until retirement"). */
