@@ -9,4 +9,10 @@ public class GameMenu{
 		//4d
 		this.actions = actions;
 	}
+
+	public void displayMenu(){
+		for (String action : actions){
+			System.out.println(action);
+		}
+	}
 }

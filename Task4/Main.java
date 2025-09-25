@@ -9,8 +9,9 @@ public class Main{
 		actions.add("3) Pause game");
 		actions.add("4) End game");
 
-		for (String action : actions){
-			System.out.println(action);
-		}
+		//4g
+		GameMenu menu = new GameMenu(actions);
+		//4h
+		menu.displayMenu();
 	} 
 }
