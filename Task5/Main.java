@@ -12,6 +12,8 @@ public class Main{
 		//4g
 		GameMenu menu = new GameMenu(actions);
 		//4i
-		menu.promptUser();
+
+		//5d
+		String choice = menu.promptUser();
 	} 
 }
